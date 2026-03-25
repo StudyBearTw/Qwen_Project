@@ -1,33 +1,37 @@
 import torch
-from diffusers import AutoPipelineForText2Image
+from diffusers import DiffusionPipeline
 
 def generate_scene():
-    print("--- 準備載入圖像生成模型 ---")
+    print("--- 準備載入圖像生成模型 (Qwen-Image-2512) ---")
     
-    # 1. 載入模型
-    # 這裡我們使用 SDXL Turbo 作為測試，它速度極快且支援高畫質
-    # (第一次執行時會自動從網路下載模型權重檔，約需幾 GB 的空間)
-    pipe = AutoPipelineForText2Image.from_pretrained(
-        "stabilityai/sdxl-turbo", 
-        torch_dtype=torch.float16, 
-        variant="fp16"
+    pipe = DiffusionPipeline.from_pretrained(
+        "Qwen/Qwen-Image-2512", 
+        torch_dtype=torch.bfloat16
     )
     
-    # 將模型推送到你的 RTX A4500 GPU 上
-    pipe.to("cuda")
-    print("✅ 模型載入完成！")
+    # 🌟 終極省 VRAM 三神技 🌟
+    # 1. CPU 智慧卸載：不要用 .to("cuda")，讓套件自己決定誰該進 GPU，誰該退回 CPU
+    # pipe.enable_model_cpu_offload() 
+    pipe.enable_sequential_cpu_offload()
+    # 2. VAE 切片解碼：將圖片切成小塊分批解碼，大幅壓低最後一步的 VRAM 峰值
+    pipe.vae.enable_slicing()
+    
+    # 3. VAE 拼貼解碼：針對超高畫質生成的神級優化
+    pipe.vae.enable_tiling()
 
-    # 2. 設定提示詞 (這就是未來從 Gemini JSON 解析出來的內容)
-    # 我們把 global_style (水彩繪本風) 與 image_prompt (三隻小豬道別) 結合
+    print("✅ 模型與 VRAM 優化設定完成！")
+
     prompt = "Children's storybook illustration, watercolor style, bright and cheerful colors. Three cute little pigs standing in front of their mother pig, waving goodbye, in a sunny green meadow, wide shot."
     
     print("開始生成圖片，請稍候...")
     
-    # 3. 執行推論生成 (Turbo 模型只需要 4 步就能生圖)
-    image = pipe(prompt=prompt, num_inference_steps=4, guidance_scale=0.0).images[0]
+    image = pipe(
+        prompt=prompt, 
+        num_inference_steps=40, 
+        guidance_scale=5.0
+    ).images[0]
     
-    # 4. 存檔
-    output_filename = "scene_01.png"
+    output_filename = "scene_01_qwen.png"
     image.save(output_filename)
     print(f"✅ 圖片生成成功！已儲存為 {output_filename}")
 

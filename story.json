@@ -1,0 +1,18 @@
+{
+  "project_metadata": {
+    "title": "三隻小豬",
+    "global_style_prompt": "Children's storybook illustration, watercolor style, bright and cheerful colors. "
+  },
+  "scenes": [
+    {
+      "scene_id": 1,
+      "narration": "從前從前，有三隻小豬兄弟。有一天，豬媽媽告訴他們，是時候離開家，自己去蓋房子了。",
+      "image_prompt": "Three cute little pigs standing in front of their mother pig, waving goodbye, in a sunny green meadow, wide shot."
+    },
+    {
+      "scene_id": 2,
+      "narration": "豬大哥生性慵懶，他很快地用稻草蓋了一間茅草屋，然後就在旁邊睡午覺了。",
+      "image_prompt": "One cute little pig sleeping lazily next to a poorly built house made of yellow straw, sunny day."
+    }
+  ]
+}
