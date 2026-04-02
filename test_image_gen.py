@@ -21,8 +21,8 @@ def generate_scene():
 
     print("✅ 模型與 VRAM 優化設定完成！")
 
-    prompt = "Children's storybook illustration, watercolor style, bright and cheerful colors. Three cute little pigs standing in front of their mother pig, waving goodbye, in a sunny green meadow, wide shot."
-    
+    #prompt = "Children's storybook illustration, watercolor style, bright and cheerful colors. Three cute little pigs standing in front of their mother pig, waving goodbye, in a sunny green meadow, wide shot."
+    prompt = "童話故事書插畫，水彩風格，明亮愉快的色彩。三隻可愛的小豬站在他們的媽媽豬面前，揮手告別，在陽光明媚的綠色草地上，遠景。"
     print("開始生成圖片，請稍候...")
     
     image = pipe(

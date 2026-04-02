@@ -76,8 +76,8 @@ def process_story(json_path, image_pipe, tts_model):
         scene_id = scene["scene_id"]
         print(f"\n>> 正在處理第 {scene_id} 幕...")
         
-        img_path = f"test2_scene_{scene_id:02d}.png"
-        wav_path = f"test2_scene_{scene_id:02d}.wav"
+        img_path = f"test_sound_scene_{scene_id:02d}.png"
+        wav_path = f"test_sound_scene_{scene_id:02d}.wav"
         full_prompt = global_style + scene["image_prompt"]
         
         # 🌟 平行處理核心：開啟一個最多容納 2 個工人的執行緒池
@@ -103,12 +103,18 @@ def process_story(json_path, image_pipe, tts_model):
 
     return video_clips
 
-def synthesize_final_video(video_clips, output_filename="test_final_storybook2.mp4"):
+def synthesize_final_video(video_clips, output_filename="testsound_final_storybook.mp4"):
     print("\n--- [3/3] 開始進行全片串接與輸出 ---")
     
     # 🌟 關鍵修復：拿掉 method="compose"，回歸最原生的串接方式
     # 這樣 MoviePy 就會乖乖保留每一幕原本已經綁定好的音軌
     final_video = concatenate_videoclips(video_clips)
+    
+    # 🌟 新增：提取並連接所有音軌
+    audio_clips = [clip.audio for clip in video_clips if clip.audio is not None]
+    if audio_clips:
+        final_audio = concatenate_audioclips(audio_clips)
+        final_video = final_video.with_audio(final_audio)
     
     # 計算完整的輸出路徑
     full_output_path = os.path.join(OUTPUT_DIR, output_filename)
@@ -118,7 +124,7 @@ def synthesize_final_video(video_clips, output_filename="test_final_storybook2.m
         full_output_path, 
         fps=24, 
         codec="libx264", 
-        audio_codec="aac",
+        audio_codec="libmp3lame",
         logger=None 
     )
     print(f"\n🎉 專案大功告成！完整繪本已儲存為 {full_output_path}")

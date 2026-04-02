@@ -16,4 +16,4 @@ def test_environment():
 if __name__ == "__main__":
     test_environment()
 
-#開啟storyvenv:story_env\Scripts\activate
+#開啟storyvenv: story_env\Scripts\activate
