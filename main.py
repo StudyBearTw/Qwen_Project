@@ -37,14 +37,33 @@ def load_models():
     print("✅ 所有模型載入完畢 (準備啟動平行運算)！\n")
     return image_pipe, tts_model
 
-# 🌟 獨立出「畫圖」的任務函式，供執行緒呼叫
+# 🌟 獨立出「畫圖」的任務函式，供執行緒呼叫(原始程式碼)
+# def generate_image_task(scene_id, full_prompt, image_pipe, img_path):
+#     print(f"  [圖-執行緒] 啟動！正在繪製第 {scene_id} 幕 (Qwen 極限運算中)...")
+#     image = image_pipe(
+#         prompt=full_prompt, 
+#         num_inference_steps=40, 
+#         guidance_scale=5.0
+#     ).images[0]
+#     full_img_path = os.path.join(OUTPUT_DIR, img_path)
+#     image.save(full_img_path)
+#     print(f"  [圖-執行緒] 第 {scene_id} 幕圖片生成完畢！")
+
+# 🌟 修改 1：在畫圖任務中加入「隨機種子 (Seed)」鎖定機制
 def generate_image_task(scene_id, full_prompt, image_pipe, img_path):
     print(f"  [圖-執行緒] 啟動！正在繪製第 {scene_id} 幕 (Qwen 極限運算中)...")
+    
+    # 🌟 核心優化：鎖定隨機種子 (這裡以 42 為例，你也可以換成其他幸運數字)
+    # 這會強迫模型在不同幕之間，使用相同的潛在空間起點，大幅增加構圖與角色的穩定度
+    fixed_generator = torch.Generator().manual_seed(42)
+    
     image = image_pipe(
         prompt=full_prompt, 
         num_inference_steps=40, 
-        guidance_scale=5.0
+        guidance_scale=5.0,
+        generator=fixed_generator # 將鎖定的種子餵給生圖引擎
     ).images[0]
+    
     full_img_path = os.path.join(OUTPUT_DIR, img_path)
     image.save(full_img_path)
     print(f"  [圖-執行緒] 第 {scene_id} 幕圖片生成完畢！")
@@ -61,6 +80,49 @@ def generate_audio_task(scene_id, narration, tts_model, wav_path):
     sf.write(full_wav_path, wavs[0], sr)
     print(f"  [音-執行緒] 第 {scene_id} 幕配音生成完畢！")
 
+# def process_story(json_path, image_pipe, tts_model):
+#     print("--- [2/3] 開始解析故事並雙線平行生成素材 ---")
+    
+#     with open(json_path, 'r', encoding='utf-8') as f:
+#         story_data = json.load(f)
+            
+#     global_style = story_data["project_metadata"]["global_style_prompt"]
+#     scenes = story_data["scenes"]
+    
+#     video_clips = [] 
+    
+#     for scene in scenes:
+#         scene_id = scene["scene_id"]
+#         print(f"\n>> 正在處理第 {scene_id} 幕...")
+        
+#         img_path = f"test_sound_scene_{scene_id:02d}.png"
+#         wav_path = f"test_sound_scene_{scene_id:02d}.wav"
+#         full_prompt = global_style + scene["image_prompt"]
+        
+#         # 🌟 平行處理核心：開啟一個最多容納 2 個工人的執行緒池
+#         with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
+#             # 同時把兩個任務發派給工人
+#             future_img = executor.submit(generate_image_task, scene_id, full_prompt, image_pipe, img_path)
+#             future_aud = executor.submit(generate_audio_task, scene_id, scene["narration"], tts_model, wav_path)
+            
+#             # 程式會停在這裡，直到兩個工人都回報「做完了」才會繼續往下走
+#             concurrent.futures.wait([future_img, future_aud])
+        
+#         # 兩邊都做完後，清理一下 GPU 記憶體碎片
+#         torch.cuda.empty_cache()
+
+#         # --- C. 合成單幕影片 ---
+#         print(f"  [影-主線] 正在將第 {scene_id} 幕的圖與音組合成影片...")
+#         audio_clip = AudioFileClip(os.path.join(OUTPUT_DIR, wav_path))
+#         image_clip = ImageClip(os.path.join(OUTPUT_DIR, img_path)).with_duration(audio_clip.duration)
+#         video_clip = image_clip.with_audio(audio_clip)
+        
+#         video_clips.append(video_clip)
+#         print(f"  [影-主線] 第 {scene_id} 幕剪輯完成")
+
+#     return video_clips
+
+# 🌟 修改 2：在主迴圈中動態組裝「角色設定卡」
 def process_story(json_path, image_pipe, tts_model):
     print("--- [2/3] 開始解析故事並雙線平行生成素材 ---")
     
@@ -68,8 +130,11 @@ def process_story(json_path, image_pipe, tts_model):
         story_data = json.load(f)
             
     global_style = story_data["project_metadata"]["global_style_prompt"]
-    scenes = story_data["scenes"]
     
+    # 🌟 核心優化：讀取 JSON 中的角色設定卡 (加入 .get 防呆機制，以防舊版 JSON 沒有這欄)
+    character_card = story_data["project_metadata"].get("character_identity_card", "")
+    
+    scenes = story_data["scenes"]
     video_clips = [] 
     
     for scene in scenes:
@@ -78,21 +143,19 @@ def process_story(json_path, image_pipe, tts_model):
         
         img_path = f"test_sound_scene_{scene_id:02d}.png"
         wav_path = f"test_sound_scene_{scene_id:02d}.wav"
-        full_prompt = global_style + scene["image_prompt"]
         
-        # 🌟 平行處理核心：開啟一個最多容納 2 個工人的執行緒池
+        # 🌟 核心優化：終極 Prompt 組合方程式 
+        # [全局畫風] + [角色設定卡] + [單幕動作]
+        full_prompt = f"{global_style} {character_card} {scene['image_prompt']}"
+        
+        # 開啟執行緒池... (這段與你原本的一樣)
         with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
-            # 同時把兩個任務發派給工人
             future_img = executor.submit(generate_image_task, scene_id, full_prompt, image_pipe, img_path)
             future_aud = executor.submit(generate_audio_task, scene_id, scene["narration"], tts_model, wav_path)
-            
-            # 程式會停在這裡，直到兩個工人都回報「做完了」才會繼續往下走
             concurrent.futures.wait([future_img, future_aud])
         
-        # 兩邊都做完後，清理一下 GPU 記憶體碎片
         torch.cuda.empty_cache()
 
-        # --- C. 合成單幕影片 ---
         print(f"  [影-主線] 正在將第 {scene_id} 幕的圖與音組合成影片...")
         audio_clip = AudioFileClip(os.path.join(OUTPUT_DIR, wav_path))
         image_clip = ImageClip(os.path.join(OUTPUT_DIR, img_path)).with_duration(audio_clip.duration)
