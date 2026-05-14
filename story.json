@@ -2,28 +2,35 @@
   "project_metadata": {
     "title": "小狐狸的程式魔法",
     "global_style_prompt": "Digital storybook illustration, vibrant Pixar style, 3D render feel, soft lighting, whimsical forest environment, cute anthropomorphic character design.",
-    "character_identity_card": "The main character is Aki, a cute orange fox wearing a tiny blue wizard hat and oversized round glasses. He has a fluffy tail with a white tip."
+    "character_master": {
+      "name": "Aki",
+      "species": "orange fox",
+      "body_features": "fluffy tail with a white tip",
+      "outfit": "tiny blue wizard hat",
+      "accessories": "oversized round glasses",
+      "base_clothing": "No clothes, natural fur body"
+    }
   },
   "scenes": [
     {
       "scene_id": 1,
       "narration": "陽光明媚的早晨，小狐狸阿光在森林深處發現了一個神奇的發光盒子。他好奇地用小爪子碰了碰按鍵，螢幕突然亮了起來！阿光心想：『哇！這難道是傳說中的魔法書嗎？我也想學會這種神奇的魔法！』",
-      "image_prompt": "Aki, the cute orange fox, sitting on a mossy log, looking curiously at a glowing silver laptop computer. Sunbeams filtering through ancient forest trees, magical sparkles in the air, close-up shot."
+      "image_prompt": "Sitting on a mossy log, looking curiously at a glowing silver laptop computer. Sunbeams filtering through ancient forest trees, magical sparkles in the air, close-up shot."
     },
     {
       "scene_id": 2,
       "narration": "阿光找來了森林裡最聰明的貓頭鷹博士。博士推了推眼鏡說：『這叫做寫程式喔！就像是在玩拼圖，把各種指令像積木一樣拼起來。』阿光聽得好認真，尾巴開心地搖來搖去。",
-      "image_prompt": "A wise old owl wearing glasses teaching Aki the fox. Floating colorful holographic code blocks and logic symbols between them. Aki is focused, touching a glowing 'Start' block. Warm orange lighting inside a cozy treehouse."
+      "image_prompt": "Learning from a wise old owl wearing glasses. Floating colorful holographic code blocks and logic symbols between them. Focused expression, touching a glowing 'Start' block. Warm orange lighting inside a cozy treehouse."
     },
     {
       "scene_id": 3,
       "narration": "經過好幾天的努力，阿光終於寫出了他的第一個程式！他輕輕按下『執行』鍵，突然，嗶嗶啵啵！螢幕裡飛出了無數隻會發光的虛擬小蝴蝶，照亮了整個夜晚的森林。",
-      "image_prompt": "Night forest scene. Aki cheering with joy as hundreds of glowing neon blue holographic butterflies fly out from the laptop screen. The dreamlike blue light illuminates the surrounding grass and a surprised little rabbit watching nearby."
+      "image_prompt": "Night forest scene. Cheering with joy as hundreds of glowing neon blue holographic butterflies fly out from the laptop screen. The dreamlike blue light illuminates the surrounding grass and a surprised little rabbit watching nearby."
     },
     {
       "scene_id": 4,
       "narration": "森林裡的小動物們都驚呼起來：『阿光，你好厲害啊！』阿光驕傲地挺起胸膛笑著說：『原來寫程式一點都不難，只要發揮想像力，大家都能成為創造奇蹟的魔法師呢！』",
-      "image_prompt": "Heartwarming group photo composition. Aki standing proudly in the center smiling, holding the glowing laptop. Surrounded by cheering squirrels, rabbits, and deer. Soft moonlight background with a few lingering glowing virtual butterflies."
+      "image_prompt": "Heartwarming group photo composition. Standing proudly in the center smiling, holding the glowing laptop. Surrounded by cheering squirrels, rabbits, and deer. Soft moonlight background with a few lingering glowing virtual butterflies."
     }
   ]
 }

@@ -126,13 +126,45 @@ def generate_audio_task(scene_id, narration, tts_model, wav_path):
 def process_story(json_path, image_pipe, tts_model):
     print("--- [2/3] 開始解析故事並雙線平行生成素材 ---")
     
+    # with open(json_path, 'r', encoding='utf-8') as f:
+    #     story_data = json.load(f)
+            
+    # global_style = story_data["project_metadata"]["global_style_prompt"]
+    
+    # # 🌟 核心優化：讀取 JSON 中的角色設定卡 (加入 .get 防呆機制，以防舊版 JSON 沒有這欄)
+    # character_card = story_data["project_metadata"].get("character_identity_card", "")
+
+    #模組化角色設定(5/14)
     with open(json_path, 'r', encoding='utf-8') as f:
         story_data = json.load(f)
             
     global_style = story_data["project_metadata"]["global_style_prompt"]
     
-    # 🌟 核心優化：讀取 JSON 中的角色設定卡 (加入 .get 防呆機制，以防舊版 JSON 沒有這欄)
-    character_card = story_data["project_metadata"].get("character_identity_card", "")
+    # 🌟 模組化角色解析邏輯：安全提取 character_master 物件
+    char_data = story_data["project_metadata"].get("character_master", {})
+    
+    name = char_data.get("name", "The main character")
+    species = char_data.get("species", "character")
+    body_features = char_data.get("body_features", "")
+    outfit = char_data.get("outfit", "")
+    accessories = char_data.get("accessories", "")
+    base_clothing = char_data.get("base_clothing", "")
+
+    # 🌟 動態扁平化組裝，過濾空缺欄位維持語意純淨度
+    desc_parts = [f"The main character is {name}, a {species}."]
+    if body_features:
+        desc_parts.append(f"Physical features: {body_features}.")
+    
+    # 針對服飾配件做智慧型合併
+    if outfit or accessories:
+        wearings = [w for w in [outfit, accessories] if w] # 只留下非空字串
+        desc_parts.append(f"Wearing: {' and '.join(wearings)}.")
+        
+    if base_clothing:
+        desc_parts.append(f"Clothing state: {base_clothing}.")
+        
+    character_card = " ".join(desc_parts)
+    print(f"  [系統] 成功動態組裝角色設定卡:\n   -> {character_card}")
     
     scenes = story_data["scenes"]
     video_clips = [] 
