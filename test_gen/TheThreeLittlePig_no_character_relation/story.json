@@ -1,0 +1,181 @@
+{
+"project_metadata": {
+"title": "三隻小豬的森林冒險",
+"global_style_prompt": "Digital storybook illustration, vibrant Pixar style, 3D render feel, rich fairytale mood, soft cinematic lighting, highly detailed environments.",
+"character_master": {
+"name": "豬小弟",
+"species": "Pig",
+"body_features": "Plump, cute pink skin, short curly tail, expressive snout.",
+"outfit": "Blue denim overalls.",
+"accessories": "A tiny red bricklayer's trowel.",
+"base_clothing": "No clothes, natural skin"
+}
+},
+"scenes": [
+{
+"scene_id": 1,
+"environment": {
+"location": "A cozy pig house at the edge of the forest.",
+"time_and_weather": "Morning, sunny.",
+"key_elements": "Luggage bags, a wooden fence, blooming flowers.",
+"lighting_and_atmosphere": "Bright and warm morning light, feeling hopeful but slightly cautious."
+},
+"narration": "豬爸爸和豬媽媽把行李交給三兄弟。他們叮嚀著：「森林裡有大野狼，你們一定要小心喔！」",
+"image_prompt": "Standing together with parents, receiving small luggage bags, waving goodbye. Wide shot establishing the starting environment."
+},
+{
+"scene_id": 2,
+"environment": {
+"location": "Deep inside a lush green forest.",
+"time_and_weather": "Midday, sunny.",
+"key_elements": "Tall ancient trees, a winding dirt path, scattered leaves.",
+"lighting_and_atmosphere": "Dappled sunlight filtering through the canopy, creating an adventurous atmosphere."
+},
+"narration": "三隻小豬各自背著行囊，踏上了未知的旅程。他們在森林裡走啊走，尋找適合蓋房子的空地。",
+"image_prompt": "Walking along the dirt path side by side, looking around curiously at the tall trees. Medium shot advancing the journey."
+},
+{
+"scene_id": 3,
+"environment": {
+"location": "A wide, flat grassy clearing in the forest.",
+"time_and_weather": "Afternoon.",
+"key_elements": "Green grass, a small stream nearby, scattered wild mushrooms.",
+"lighting_and_atmosphere": "Soft afternoon sunlight illuminating the clearing, peaceful and inviting."
+},
+"narration": "終於，他們發現了一處平坦又陰涼的空地。豬兄弟們決定在這裡停下來，開始建造屬於自己的新家。",
+"image_prompt": "Pointing excitedly at the open grassy space, dropping their luggage bags with relieved smiles. Wide shot establishing the new location."
+},
+{
+"scene_id": 4,
+"environment": {
+"location": "A spot in the grassy clearing.",
+"time_and_weather": "Afternoon.",
+"key_elements": "A massive pile of golden yellow straw.",
+"lighting_and_atmosphere": "Bright sunlight hitting the golden straw, making it glow warmly."
+},
+"narration": "貪玩的豬大哥找來最輕的乾草。他隨便把乾草捆一捆、疊一疊，一下子就蓋好了他的新房子。",
+"image_prompt": "Stacking bundles of straw carelessly while yawning, looking lazy and eager to finish quickly. Medium shot showing the building process."
+},
+{
+"scene_id": 5,
+"environment": {
+"location": "Another spot in the clearing.",
+"time_and_weather": "Late afternoon.",
+"key_elements": "A pile of rough wooden logs and branches.",
+"lighting_and_atmosphere": "Sun slowly setting, casting slightly longer shadows over the wood."
+},
+"narration": "豬二哥覺得累了，於是撿了些木頭當材料。他連釘子都懶得用，隨意把木頭堆疊起來就算完成了。",
+"image_prompt": "Balancing wooden logs on top of each other clumsily, wiping sweat from the forehead. Medium shot focusing on the fragile structure."
+},
+{
+"scene_id": 6,
+"environment": {
+"location": "A solid patch of land in the clearing.",
+"time_and_weather": "Sunset.",
+"key_elements": "A sturdy pile of gray stones, a wooden bucket filled with wet mud.",
+"lighting_and_atmosphere": "Golden hour lighting, emphasizing hard work and dedication."
+},
+"narration": "只有豬小弟選擇了最堅固的石頭。他仔細地用泥漿把石頭緊緊黏結，決心要蓋一棟擋得住大野狼的房子。",
+"image_prompt": "Carefully applying mud to a stone with a trowel, wearing a determined and focused expression. Close-up shot highlighting the serious attitude."
+},
+{
+"scene_id": 7,
+"environment": {
+"location": "Dark bushes at the edge of the clearing.",
+"time_and_weather": "Dusk.",
+"key_elements": "Thick, shadowy leaves and thorny vines.",
+"lighting_and_atmosphere": "Dark and mysterious shadows contrasting with the fading daylight, highly tense."
+},
+"narration": "這時，一雙銳利的眼睛正從暗處盯著他們。原來是那隻凶惡的大野狼，正盤算著今晚的美味大餐。",
+"image_prompt": "Lurking behind the leaves, showing only glowing eyes and a wicked smirk, staring hungrily towards the clearing. Close-up shot capturing the evil intent."
+},
+{
+"scene_id": 8,
+"environment": {
+"location": "In front of the flimsy straw house.",
+"time_and_weather": "Night, full moon.",
+"key_elements": "The straw house, a big bad wolf.",
+"lighting_and_atmosphere": "Cold silver moonlight illuminating the scene, scary and dramatic mood."
+},
+"narration": "夜晚降臨，大野狼悄悄來到豬大哥的門前。他深吸一口氣，輕輕一吹，就把乾草屋吹得無影無蹤！",
+"image_prompt": "Taking a massive breath and blowing powerfully at the fragile structure, sending straw flying everywhere. Wide shot capturing the destruction."
+},
+{
+"scene_id": 9,
+"environment": {
+"location": "The path between the straw and wooden houses.",
+"time_and_weather": "Night.",
+"key_elements": "Scattered straw flying in the wind, a dirt path.",
+"lighting_and_atmosphere": "Dark forest background with dim moonlight, conveying panic and urgency."
+},
+"narration": "豬大哥嚇得魂飛魄散，拼命逃跑！他一路狂奔，躲進了豬二哥的木頭房子裡，嚇得全身發抖。",
+"image_prompt": "Running frantically with arms flailing in panic, looking back over the shoulder in terror. Medium shot tracking the intense action."
+},
+{
+"scene_id": 10,
+"environment": {
+"location": "In front of the wooden house.",
+"time_and_weather": "Night.",
+"key_elements": "The wooden log house, the big bad wolf.",
+"lighting_and_atmosphere": "Harsh, dramatic shadows cast by the moonlight, chaotic and terrifying."
+},
+"narration": "大野狼立刻追了過來。他這次用力一吹，嘩啦嘩啦！所有的木頭瞬間散落一地，房子又垮了！",
+"image_prompt": "Blowing violently again, causing the logs to collapse and scatter across the ground. Wide shot showing the chaotic impact."
+},
+{
+"scene_id": 11,
+"environment": {
+"location": "Inside the sturdy brick house.",
+"time_and_weather": "Night.",
+"key_elements": "Solid stone walls, a roaring fireplace, a heavy wooden door.",
+"lighting_and_atmosphere": "Warm, safe orange glow from the fireplace contrasting with the cold night outside."
+},
+"narration": "兩兄弟拔腿就跑，躲進豬小弟的石頭屋緊緊抱在一起。豬小弟拍拍胸脯說：「別怕，我的房子很堅固！」",
+"image_prompt": "Trembling and hugging each other tightly, while standing protectively in front with a confident smile. Medium shot emphasizing the emotional contrast."
+},
+{
+"scene_id": 12,
+"environment": {
+"location": "Outside the sturdy brick house.",
+"time_and_weather": "Night.",
+"key_elements": "Solid stone walls with mud joints, the big bad wolf.",
+"lighting_and_atmosphere": "Cold moonlight highlighting the solid texture of the stones."
+},
+"narration": "大野狼來到石頭屋前，用盡全力一直吹。他吹到臉紅脖子粗，但這棟堅固的房子卻連晃都沒晃一下。",
+"image_prompt": "Puffing cheeks out to the maximum, face turning red with extreme effort, looking frustrated at the unmoving wall. Close-up shot focusing on the furious expression."
+},
+{
+"scene_id": 13,
+"environment": {
+"location": "The roof of the brick house.",
+"time_and_weather": "Night.",
+"key_elements": "A stone chimney, roof tiles, the full moon in the background.",
+"lighting_and_atmosphere": "Silhouetted against the bright moon, sneaky and suspenseful atmosphere."
+},
+"narration": "又氣又餓的大野狼心生一計。他看見屋頂上的煙囪，得意地笑了笑，決定從那裡溜進屋裡吃掉小豬。",
+"image_prompt": "Sneaking carefully onto the roof, looking down into the chimney with a wicked, triumphant grin. Wide shot establishing the new threat from above."
+},
+{
+"scene_id": 14,
+"environment": {
+"location": "Inside the brick house, beneath the chimney.",
+"time_and_weather": "Night.",
+"key_elements": "A large iron cauldron, boiling water, a roaring fire.",
+"lighting_and_atmosphere": "Intense heat and bright orange firelight illuminating the room from below."
+},
+"narration": "聰明冷靜的豬小弟早就料到這招了！他趕緊在火爐上放了一大鍋水，並把水煮得熱滾滾的。",
+"image_prompt": "Stirring a bubbling black cauldron over a roaring fire, looking upwards with a sharp, prepared gaze. Medium shot focusing on the defensive action."
+},
+{
+"scene_id": 15,
+"environment": {
+"location": "Inside the brick house.",
+"time_and_weather": "Night.",
+"key_elements": "The iron cauldron, water splashing out.",
+"lighting_and_atmosphere": "Bright, joyful, and triumphant lighting from the fireplace."
+},
+"narration": "咻！大野狼順著煙囪滑下來，撲通一聲掉進熱水裡燙死了。三隻小豬歡呼慶祝，終於可以安心睡覺了！",
+"image_prompt": "Falling straight down into the pot with a shocked expression, while jumping around cheering with raised arms. Wide shot capturing the victorious finale."
+}
+]
+}

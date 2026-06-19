@@ -45,8 +45,7 @@ htmlcov/
 # 大型文件和模型（用 Git LFS 追踪）
 models/
 
-# 测试生成的媒体文件（不追踪）
-test_gen/
+# 测试生成的媒体文件（通过 LFS 追踪）
 *.safetensors
 *.ckpt
 *.avi

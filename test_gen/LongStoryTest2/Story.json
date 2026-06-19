@@ -1,0 +1,126 @@
+{
+"project_metadata": {
+"title": "小狐狸的程式魔法",
+"global_style_prompt": "Digital storybook illustration, vibrant Pixar style, 3D render feel, whimsical fairy tale mood, soft and cinematic lighting, highly detailed nature.",
+"character_master": {
+"name": "阿光",
+"species": "Fox",
+"body_features": "Small, cute, orange fur, fluffy tail with a white tip.",
+"outfit": "Tiny blue wizard hat.",
+"accessories": "Oversized round glasses.",
+"base_clothing": "No clothes, natural fur body"
+}
+},
+"scenes": [
+{
+"scene_id": 1,
+"environment": {
+"location": "A clearing in an ancient forest.",
+"time_and_weather": "Morning, sunny with clear skies.",
+"key_elements": "A large mossy log, lush green ferns, a glowing silver laptop resting on the log.",
+"lighting_and_atmosphere": "Warm sunbeams filtering through the thick tree canopy, magical dust motes floating in the air, peaceful and inviting atmosphere."
+},
+"narration": "陽光明媚的森林裡，小狐狸阿光發現了一個發光盒子。他好奇地湊上前去。",
+"image_prompt": "Sitting on the log, leaning forward and looking curiously at the glowing object. Wide shot establishing the environment."
+},
+{
+"scene_id": 2,
+"environment": {
+"location": "A clearing in an ancient forest.",
+"time_and_weather": "Morning, sunny.",
+"key_elements": "A glowing silver laptop on a mossy log.",
+"lighting_and_atmosphere": "Dappled sunlight hitting the laptop, casting soft shadows on the wood."
+},
+"narration": "「哇！這難道是傳說中的魔法書？」阿光小心翼翼地伸出爪子碰了碰鍵盤。",
+"image_prompt": "Reaching out one paw to cautiously tap the object, eyes wide open in amazement. Medium shot."
+},
+{
+"scene_id": 3,
+"environment": {
+"location": "A clearing in an ancient forest.",
+"time_and_weather": "Morning.",
+"key_elements": "The laptop screen.",
+"lighting_and_atmosphere": "The screen emits a bright, magical blue light that overpowers the sunlight."
+},
+"narration": "螢幕突然亮起，發出了神奇的藍色光芒！阿光心想一定要學會這個魔法。",
+"image_prompt": "Face illuminated by the glowing blue light, showing an expression of pure wonder and determination. Close-up shot capturing the facial emotion."
+},
+{
+"scene_id": 4,
+"environment": {
+"location": "Inside a cozy owl treehouse.",
+"time_and_weather": "Late afternoon.",
+"key_elements": "Wooden shelves filled with old books, a small wooden desk, an old owl teacher.",
+"lighting_and_atmosphere": "Warm golden hour light coming through a round window, dusty and academic but cozy atmosphere."
+},
+"narration": "於是，阿光找來了森林裡最聰明的貓頭鷹博士，請教這個盒子的秘密。",
+"image_prompt": "Looking up at an old owl who is teaching in front of a wooden desk. Wide shot establishing the interior room."
+},
+{
+"scene_id": 5,
+"environment": {
+"location": "Inside a cozy owl treehouse.",
+"time_and_weather": "Late afternoon.",
+"key_elements": "Floating colorful holographic code blocks and logic symbols in the air.",
+"lighting_and_atmosphere": "Colorful glow from the floating blocks illuminating the immediate area."
+},
+"narration": "博士推著眼鏡說：「寫程式就像玩拼圖，把各種指令像積木一樣拼起來喔！」",
+"image_prompt": "Pointing at a floating holographic block with a happy, engaged expression. Medium shot."
+},
+{
+"scene_id": 6,
+"environment": {
+"location": "Inside a cozy owl treehouse.",
+"time_and_weather": "Evening.",
+"key_elements": "The glowing laptop keyboard.",
+"lighting_and_atmosphere": "Warm orange lamp light mixed with the cool light from the screen."
+},
+"narration": "聽著博士的解說，阿光專心致志地盯著螢幕，尾巴在身後開心地搖來搖去。",
+"image_prompt": "Furrowing brows in deep focus, pressing a key on the object while the tail wags happily. Close-up shot capturing the intense concentration."
+},
+{
+"scene_id": 7,
+"environment": {
+"location": "A grassy clearing in the forest.",
+"time_and_weather": "Night, clear sky with stars.",
+"key_elements": "Tall grass, sleeping flowers, the glowing laptop.",
+"lighting_and_atmosphere": "Soft silver moonlight illuminating the grass, high contrast with the bright screen."
+},
+"narration": "經過好幾天的努力，阿光終於寫出了他的第一個程式。他滿懷期待按下執行鍵。",
+"image_prompt": "Standing proudly in the dark, pressing the final button enthusiastically. Wide shot establishing the night atmosphere."
+},
+{
+"scene_id": 8,
+"environment": {
+"location": "A grassy clearing in the forest.",
+"time_and_weather": "Night.",
+"key_elements": "Hundreds of glowing neon blue holographic butterflies.",
+"lighting_and_atmosphere": "Dreamlike and magical, the blue light from the butterflies illuminates the entire scene."
+},
+"narration": "嗶嗶啵啵！螢幕裡飛出了無數隻會發光的虛擬小蝴蝶，瞬間照亮了整座森林。",
+"image_prompt": "Cheering with raised paws, completely surrounded by swirling glowing butterflies. Medium shot."
+},
+{
+"scene_id": 9,
+"environment": {
+"location": "A grassy clearing in the forest.",
+"time_and_weather": "Night.",
+"key_elements": "A few glowing butterflies resting nearby.",
+"lighting_and_atmosphere": "Gentle blue glow reflecting off the surroundings."
+},
+"narration": "森林裡的小動物們都被光芒吸引過來，大家忍不住驚呼：「阿光，你好厲害！」",
+"image_prompt": "Turning head to smile proudly at off-screen friends, face beautifully lit by the gentle blue glow. Close-up shot capturing the confident smile."
+},
+{
+"scene_id": 10,
+"environment": {
+"location": "A grassy clearing in the forest.",
+"time_and_weather": "Night.",
+"key_elements": "Squirrels, rabbits, and deer gathered around, fading holographic butterflies in the air.",
+"lighting_and_atmosphere": "Festive, warm, and joyful lighting created by the mix of moonlight and magical blue light."
+},
+"narration": "阿光驕傲地挺起胸膛說：「只要發揮想像力，大家都能成為創造奇蹟的魔法師呢！」",
+"image_prompt": "Standing in the center smiling, holding the object, surrounded by cheering animals. Wide shot showing the lively group."
+}
+]
+}

@@ -1,0 +1,23 @@
+{
+  "project_metadata": {
+    "title": "小狐狸的奇幻程式冒險",
+    "global_style_prompt": "Digital storybook illustration, vibrant Pixar style, 3D render feel, soft lighting, whimsical forest environment, cute anthropomorphic character design."
+  },
+  "scenes": [
+    {
+      "scene_id": 1,
+      "narration": "在充滿陽光的青青森林裡，小狐狸阿光發現了一個亮晶晶的發光盒子。他歪著頭想：『哇！這就是傳說中的電腦嗎？我也想學會變魔法，寫出厲害的程式！』",
+      "image_prompt": "A cute orange fox named Aki sitting on a mossy log, looking curiously at a glowing laptop computer. Sunbeams filtering through ancient forest trees, magical sparkles in the air, close-up shot."
+    },
+    {
+      "scene_id": 2,
+      "narration": "阿光找來了聰明的老頭鷹老師。老師摸摸鬍鬚說：『寫程式就像是跟機器人說悄悄話，你要先學會邏輯方塊喔！』阿光認真地擺弄著五顏六色的程式指令，尾巴開心地搖來搖去。",
+      "image_prompt": "A wise old owl wearing glasses teaching the fox. Floating colorful holographic code blocks and logic symbols (if-then, loops) between them. The fox is focused, touching a glowing 'Start' block."
+    },
+    {
+      "scene_id": 3,
+      "narration": "突然，「砰」的一聲！阿光寫下的第一個程式竟然召喚出了一群跳舞的小螢火蟲！森林裡的夥伴們都圍過來驚嘆：『阿光，你真的學會了科技魔法，讓森林變得好漂亮喔！』",
+      "image_prompt": "The little fox Aki cheering with joy as hundreds of glowing neon fireflies form patterns of heart and stars in the night forest. Squirrels and rabbits watching in awe, the fox holding the glowing laptop like a magic wand."
+    }
+  ]
+}

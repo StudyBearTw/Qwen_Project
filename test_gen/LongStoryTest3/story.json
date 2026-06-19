@@ -1,0 +1,181 @@
+{
+"project_metadata": {
+"title": "青蛙王子與金球",
+"global_style_prompt": "Digital storybook illustration, vibrant Pixar style, 3D render feel, rich fairy tale mood, soft cinematic lighting, highly detailed environments.",
+"character_master": {
+"name": "公主",
+"species": "Human",
+"body_features": "Young beautiful girl, pale skin, rosy cheeks, long blonde curly hair.",
+"outfit": "Elegant pink royal gown with gold embroidery.",
+"accessories": "A tiny shiny golden crown.",
+"base_clothing": "N/A"
+}
+},
+"scenes": [
+{
+"scene_id": 1,
+"environment": {
+"location": "A grand castle garden with blooming roses and a beautiful stone fountain.",
+"time_and_weather": "Morning, sunny and bright.",
+"key_elements": "A shiny golden ball flying in the air.",
+"lighting_and_atmosphere": "Warm morning sunlight casting soft shadows, cheerful and peaceful atmosphere."
+},
+"narration": "早晨的陽光灑滿城堡花園。公主開心地把最珍貴的金球拋向空中，臉上洋溢著幸福的笑容。",
+"image_prompt": "Throwing a shiny golden ball into the air with a bright, joyful smile. Wide shot."
+},
+{
+"scene_id": 2,
+"environment": {
+"location": "An old stone well deep inside the garden.",
+"time_and_weather": "Morning, sunny.",
+"key_elements": "Dark water inside the well, splashing water droplets.",
+"lighting_and_atmosphere": "Dappled sunlight hitting the stone well, dramatic shadow inside the well."
+},
+"narration": "突然，一個不小心，金球從她的手中滑落，撲通一聲掉進了深邃的水井裡，消失不見了。",
+"image_prompt": "Leaning over the stone edge, reaching out desperately as the ball falls into the dark water. Medium shot."
+},
+{
+"scene_id": 3,
+"environment": {
+"location": "Beside the old stone well.",
+"time_and_weather": "Morning.",
+"key_elements": "A small green frog sitting on a mossy stone.",
+"lighting_and_atmosphere": "Soft lighting focusing on the emotional faces, slightly melancholic."
+},
+"narration": "公主坐在井邊，眼裡泛起淚光難過地哭泣。「為甚麼這麼傷心呢？」一個溫和的聲音響起。",
+"image_prompt": "Sitting on the ground, wiping tears from the eyes, looking down at the small green frog. Close-up shot."
+},
+{
+"scene_id": 4,
+"environment": {
+"location": "Beside the old stone well.",
+"time_and_weather": "Morning.",
+"key_elements": "The small green frog talking.",
+"lighting_and_atmosphere": "Bright sunlight returning, feeling of hope."
+},
+"narration": "青蛙歪著頭說：「我可以幫你撿回金球，但你要答應讓我住進城堡，和你一起吃飯睡覺。」",
+"image_prompt": "Nodding eagerly while wiping away tears, looking at the frog with a surprised expression. Medium shot."
+},
+{
+"scene_id": 5,
+"environment": {
+"location": "Beside the old stone well.",
+"time_and_weather": "Morning.",
+"key_elements": "The wet green frog holding the golden ball.",
+"lighting_and_atmosphere": "Sparkling water drops catching the sunlight, joyful and vibrant."
+},
+"narration": "為了拿回最愛的玩具，公主點頭答應了。青蛙立刻跳進井裡，沒多久就把金球叼了上來。",
+"image_prompt": "Holding the shiny golden ball joyfully, kneeling next to the wet frog on the stone edge. Wide shot."
+},
+{
+"scene_id": 6,
+"environment": {
+"location": "A stone path leading to the grand castle.",
+"time_and_weather": "Morning.",
+"key_elements": "Castle gates in the background.",
+"lighting_and_atmosphere": "Bright and airy, conveying a sense of fast movement."
+},
+"narration": "公主拿回金球高興極了，轉身就往城堡跑去，把可憐的青蛙和自己的承諾全都拋在腦後。",
+"image_prompt": "Running away happily towards the background, hugging the ball tightly, leaving the frog behind. Medium shot."
+},
+{
+"scene_id": 7,
+"environment": {
+"location": "Grand castle dining room.",
+"time_and_weather": "Night.",
+"key_elements": "Long wooden table with a feast, a grand open wooden door, a frog at the door.",
+"lighting_and_atmosphere": "Warm glow from massive crystal chandeliers, dramatic shadows near the entrance."
+},
+"narration": "當晚，國王和公主正在享用晚餐。突然傳來敲門聲，原來是那隻青蛙來要求公主履行諾言。",
+"image_prompt": "Sitting at the dining table, looking shocked and guilty towards the open grand door. Wide shot."
+},
+{
+"scene_id": 8,
+"environment": {
+"location": "Castle dining room.",
+"time_and_weather": "Night.",
+"key_elements": "Dining table, plates and candles.",
+"lighting_and_atmosphere": "Warm but intimate candlelight, emphasizing the emotional tension."
+},
+"narration": "國王嚴肅地說：「孩子，你答應過的事情，必須履行。」公主只好不情願地讓青蛙進來。",
+"image_prompt": "Looking down at the floor with an embarrassed and reluctant expression, hands fidgeting. Close-up shot."
+},
+{
+"scene_id": 9,
+"environment": {
+"location": "Luxurious royal bedroom.",
+"time_and_weather": "Night.",
+"key_elements": "Large bed with silk sheets, fluffy pillows, the green frog sitting on the pillow.",
+"lighting_and_atmosphere": "Cool silver moonlight streaming through the window, contrasting with warm bedside lamps."
+},
+"narration": "那天晚上，青蛙甚至爬上了公主的枕頭。她雖然心裡極度不舒服，但也只能無奈地忍耐著。",
+"image_prompt": "Laying in bed with furrowed brows and a highly uncomfortable expression, looking sideways at the pillow. Medium shot."
+},
+{
+"scene_id": 10,
+"environment": {
+"location": "Sunny castle balcony.",
+"time_and_weather": "Afternoon.",
+"key_elements": "Blooming potted flowers, an elegant tea table.",
+"lighting_and_atmosphere": "Warm, pleasant afternoon light, relaxing and harmonious vibe."
+},
+"narration": "日子一天天過去，青蛙每天溫柔體貼地陪伴著公主。漸漸地，公主發現自己不再討厭牠了。",
+"image_prompt": "Sitting at the table, smiling warmly and gently chatting with the small frog companion. Wide shot."
+},
+{
+"scene_id": 11,
+"environment": {
+"location": "Cozy reading room in the castle.",
+"time_and_weather": "Late afternoon.",
+"key_elements": "Bookshelves, a velvet armchair, the frog.",
+"lighting_and_atmosphere": "Sunset light coming through the window, creating a melancholic but warm mood."
+},
+"narration": "有一天，公主因為好朋友要搬走而難過大哭。青蛙輕聲安慰：「別怕，我會永遠陪著你。」",
+"image_prompt": "Crying softly with hands covering the face, while the frog lightly touches her arm. Medium shot."
+},
+{
+"scene_id": 12,
+"environment": {
+"location": "Cozy reading room in the castle.",
+"time_and_weather": "Late afternoon.",
+"key_elements": "The frog sitting on the armrest.",
+"lighting_and_atmosphere": "Warm, romantic golden hour lighting focusing entirely on the faces."
+},
+"narration": "公主聽後擦乾眼淚，覺得非常幸福。她笑著對青蛙說了聲謝謝，然後輕輕在牠的額頭上吻了一下。",
+"image_prompt": "Closing eyes peacefully, leaning in and gently kissing the frog on the forehead with a grateful smile. Close-up shot."
+},
+{
+"scene_id": 13,
+"environment": {
+"location": "Cozy reading room in the castle.",
+"time_and_weather": "Late afternoon.",
+"key_elements": "Floating magical sparkles, bright glowing light replacing the frog.",
+"lighting_and_atmosphere": "Intense magical glowing light overpowering the sunset, dramatic and miraculous atmosphere."
+},
+"narration": "突然，青蛙的身體閃爍出耀眼的光芒！牠的身形漸漸變化，竟然變成了一位英俊的王子。",
+"image_prompt": "Gasping with wide eyes, stepping back in pure astonishment as a magical glowing light surrounds them. Wide shot."
+},
+{
+"scene_id": 14,
+"environment": {
+"location": "Cozy reading room in the castle.",
+"time_and_weather": "Late afternoon.",
+"key_elements": "A handsome prince in royal attire.",
+"lighting_and_atmosphere": "Warm and gentle lighting, magical dust slowly settling down."
+},
+"narration": "王子微笑著解釋，自己是被巫婆詛咒的。多虧了公主的真心一吻，才終於解除了這個魔法。",
+"image_prompt": "Blushing with a shy but deeply happy smile, holding hands with the handsome prince. Medium shot."
+},
+{
+"scene_id": 15,
+"environment": {
+"location": "A grand fairytale wedding courtyard outside a majestic castle.",
+"time_and_weather": "Daytime, clear blue sky.",
+"key_elements": "A beautiful royal carriage, colorful confetti in the air, cheering crowds.",
+"lighting_and_atmosphere": "Extremely bright, festive, and triumphant lighting, pure joy."
+},
+"narration": "公主答應了王子的求婚。他們一起回到王子的國家舉行盛大婚禮，從此過著幸福快樂的生活。",
+"image_prompt": "Waving joyfully from a beautiful royal carriage, surrounded by cheering crowds and flying confetti. Wide shot."
+}
+]
+}
