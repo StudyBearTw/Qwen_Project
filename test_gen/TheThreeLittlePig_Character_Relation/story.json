@@ -1,0 +1,168 @@
+{
+"project_metadata": {
+"title": "三隻小豬的森林冒險",
+"global_style_prompt": "Digital storybook illustration, vibrant Pixar style, 3D render feel, rich fairytale mood, soft cinematic lighting, highly detailed environments.",
+"character_registry": {
+"protagonist": {
+"name": "豬小弟",
+"species": "Pig",
+"outfit": "Blue denim overalls and a tiny red belt."
+},
+"supporting_characters": [
+{
+"name": "豬大哥",
+"species": "Pig",
+"role": "Lazy brother",
+"outfit": "Green striped shirt and a straw hat."
+},
+{
+"name": "豬二哥",
+"species": "Pig",
+"role": "Tired brother",
+"outfit": "Yellow checkered shirt and brown suspenders."
+},
+{
+"name": "大野狼",
+"species": "Wolf",
+"role": "Villain",
+"outfit": "Torn purple vest and rugged gray fur."
+}
+],
+"relationship_dynamics": "The youngest pig is hardworking and protective of his lazy older brothers. The wolf is a hungry predator trying to hunt the pigs down."
+}
+},
+"scenes": [
+{
+"scene_id": 1,
+"environment": {
+"location": "A wide dirt path deep in the lush green forest.",
+"time_and_weather": "Morning, sunny and bright.",
+"key_elements": "Tall ancient trees, green bushes, scattered pebbles.",
+"lighting_and_atmosphere": "Bright sunlight filtering through leaves, cheerful and adventurous mood."
+},
+"narration": "豬爸爸和豬媽媽叮嚀三兄弟要小心大野狼。於是，他們帶著行李出發，走進了森林深處。",
+"image_prompt": "On the left, 豬大哥 is walking lazily. In the center, 豬二哥 is stretching his arms. On the right, 豬小弟 is marching forward energetically. Wide shot."
+},
+{
+"scene_id": 2,
+"environment": {
+"location": "A grassy clearing in the forest.",
+"time_and_weather": "Afternoon, sunny.",
+"key_elements": "A massive pile of glowing golden straw.",
+"lighting_and_atmosphere": "Warm afternoon sunlight hitting the straw, lazy and peaceful vibe."
+},
+"narration": "豬大哥覺得好累，找了最輕的乾草當材料。他隨便把乾草疊一疊，新房子就蓋好了。",
+"image_prompt": "豬大哥 is throwing bundles of straw onto a messy pile, yawning widely with a sleepy expression. Medium shot."
+},
+{
+"scene_id": 3,
+"environment": {
+"location": "Another spot in the grassy clearing.",
+"time_and_weather": "Late afternoon.",
+"key_elements": "Rough wooden logs and scattered branches.",
+"lighting_and_atmosphere": "Sun slowly setting, casting slightly longer shadows over the wood."
+},
+"narration": "豬二哥撿了些木頭，連釘子都懶得用。他隨意把木頭堆起來，也算完成了自己的家。",
+"image_prompt": "豬二哥 is clumsily stacking wooden logs, wiping sweat from his forehead with an exhausted look. Close-up shot."
+},
+{
+"scene_id": 4,
+"environment": {
+"location": "A solid patch of land in the clearing.",
+"time_and_weather": "Sunset.",
+"key_elements": "A sturdy pile of gray stones, a wooden bucket filled with wet mud.",
+"lighting_and_atmosphere": "Golden hour lighting, emphasizing hard work, dedication and warm tones."
+},
+"narration": "只有豬小弟選擇了最堅固的石頭。他仔細地用泥漿把石頭緊緊黏結，決心要擋住大野狼。",
+"image_prompt": "豬小弟 is carefully applying mud to a heavy stone block, wearing a highly determined expression. Wide shot."
+},
+{
+"scene_id": 5,
+"environment": {
+"location": "Dark bushes at the edge of the clearing.",
+"time_and_weather": "Night, dark.",
+"key_elements": "Thick leaves, thorny vines.",
+"lighting_and_atmosphere": "Cold moonlight, dark and mysterious shadows, highly suspenseful atmosphere."
+},
+"narration": "夜晚降臨，森林裡出現一雙銳利的眼睛。凶惡的大野狼正躲在暗處，盤算著今晚的美味大餐。",
+"image_prompt": "大野狼 is lurking behind the bushes, showing a wicked smirk and staring hungrily forward. Medium shot."
+},
+{
+"scene_id": 6,
+"environment": {
+"location": "In front of the flimsy straw house.",
+"time_and_weather": "Night, full moon.",
+"key_elements": "Scattered straw flying wildly in the air.",
+"lighting_and_atmosphere": "Cold silver moonlight, chaotic and terrifying mood."
+},
+"narration": "大野狼來到乾草屋前，用力一吹。呼的一聲！整間乾草屋瞬間被吹得無影無蹤，嚇壞了豬大哥。",
+"image_prompt": "On the left, 大野狼 is taking a massive breath and blowing powerfully. On the right, 豬大哥 is running away frantically with arms flailing. Wide shot."
+},
+{
+"scene_id": 7,
+"environment": {
+"location": "In front of the wooden house.",
+"time_and_weather": "Night.",
+"key_elements": "Scattered wooden logs rolling on the ground.",
+"lighting_and_atmosphere": "Harsh shadows from the moonlight, conveying extreme panic and danger."
+},
+"narration": "豬大哥急忙躲進二哥的木屋。大野狼追了過來再次用力一吹，嘩啦嘩啦，木頭散落了一地！",
+"image_prompt": "On the left, 大野狼 is blowing violently. On the right, 豬二哥 is tumbling over scattered logs in pure panic. Medium shot."
+},
+{
+"scene_id": 8,
+"environment": {
+"location": "Inside the sturdy brick house.",
+"time_and_weather": "Night.",
+"key_elements": "Solid stone walls, a roaring fireplace, a heavy wooden door.",
+"lighting_and_atmosphere": "Warm, safe orange glow from the fireplace contrasting with the cold night outside."
+},
+"narration": "兩兄弟拔腿跑進豬小弟的石頭屋躲起來。豬小弟拍拍胸脯，自信地要哥哥們放心。",
+"image_prompt": "On the left, 豬大哥 is trembling. In the center, 豬二哥 is crying. On the right, 豬小弟 is standing protectively with a confident smile. Wide shot."
+},
+{
+"scene_id": 9,
+"environment": {
+"location": "Outside the sturdy brick house.",
+"time_and_weather": "Night.",
+"key_elements": "Solid stone walls with thick mud joints.",
+"lighting_and_atmosphere": "Cold moonlight highlighting the unmoving solid texture of the stones."
+},
+"narration": "大野狼站在門前用盡全力一直吹。他吹到臉紅脖子粗，堅固的石頭屋卻連晃都沒有晃一下。",
+"image_prompt": "大野狼 is puffing his cheeks out to the maximum, face turning red with extreme effort and immense frustration. Close-up shot."
+},
+{
+"scene_id": 10,
+"environment": {
+"location": "The roof of the brick house.",
+"time_and_weather": "Night.",
+"key_elements": "A stone chimney, roof tiles, the bright full moon.",
+"lighting_and_atmosphere": "Silhouetted against the bright moon, sneaky and suspenseful atmosphere."
+},
+"narration": "又氣又餓的大野狼心生一計。他看見屋頂上的煙囪，得意地笑了笑，努力爬了上去。",
+"image_prompt": "大野狼 is sneaking carefully onto the roof tiles, looking down into the chimney with a wicked, triumphant grin. Wide shot."
+},
+{
+"scene_id": 11,
+"environment": {
+"location": "Inside the brick house, beneath the chimney.",
+"time_and_weather": "Night.",
+"key_elements": "A large iron cauldron, boiling water, a roaring fire.",
+"lighting_and_atmosphere": "Intense heat and bright orange firelight illuminating the room from below."
+},
+"narration": "聰明冷靜的豬小弟早就料到大野狼的計畫。他趕緊在火爐上，煮了一大鍋熱滾滾的開水。",
+"image_prompt": "豬小弟 is stirring a bubbling cauldron over a roaring fire, looking upwards with a sharp, prepared gaze. Medium shot."
+},
+{
+"scene_id": 12,
+"environment": {
+"location": "Inside the brick house.",
+"time_and_weather": "Night.",
+"key_elements": "The iron cauldron, huge splashes of water.",
+"lighting_and_atmosphere": "Bright, joyful, and triumphant lighting from the fireplace."
+},
+"narration": "咻的一聲！大野狼順著煙囪滑下來，撲通掉進熱水裡燙死了。三隻小豬終於可以安心睡覺了！",
+"image_prompt": "On the left, 大野狼 is falling straight down into the splashing pot with a shocked expression. On the right, 豬小弟 is jumping and cheering. Close-up shot."
+}
+]
+}
