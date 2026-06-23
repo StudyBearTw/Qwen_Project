@@ -6,26 +6,34 @@
 "protagonist": {
 "name": "公主",
 "species": "Human",
-"outfit": "Elegant pink royal gown with gold embroidery, tiny shiny golden crown."
+"outfit": "Elegant pink royal gown with gold embroidery.",
+"accessories": "Tiny shiny golden crown.",
+"base_clothing": "With clothes, pale skin color"
 },
 "supporting_characters": [
 {
 "name": "青蛙",
 "species": "Frog",
 "role": "Magical companion",
-"outfit": "Natural green skin."
+"outfit": "None.",
+"accessories": "None.",
+"base_clothing": "No clothes, natural green skin"
 },
 {
 "name": "國王",
 "species": "Human",
 "role": "Father",
-"outfit": "Majestic red velvet cape, large golden crown."
+"outfit": "Majestic red velvet cape.",
+"accessories": "Large golden crown.",
+"base_clothing": "With clothes, pale skin color"
 },
 {
 "name": "王子",
 "species": "Human",
 "role": "Love interest",
-"outfit": "Handsome royal blue suit with gold trimmings."
+"outfit": "Handsome royal blue suit with gold trimmings.",
+"accessories": "None.",
+"base_clothing": "With clothes, pale skin color"
 }
 ],
 "relationship_dynamics": "The Princess initially dislikes the Frog but grows to love his gentle nature. The King is a strict but just father figure. The Prince is the Frog's true form, deeply grateful to the Princess."
@@ -41,7 +49,7 @@
 "lighting_and_atmosphere": "Warm morning sunlight casting soft shadows, cheerful and peaceful atmosphere."
 },
 "narration": "每天早晨，美麗的公主都會在花園裡玩耍。她開心地把最珍貴的金球拋向空中，洋溢著幸福的笑容。",
-"image_prompt": "公主 is throwing a shiny ball into the air with a bright, joyful smile. Wide shot."
+"image_prompt": "(ONLY ONE CHARACTER: 1 princess) 公主 is throwing a shiny ball into the air with a bright, joyful smile. Wide shot."
 },
 {
 "scene_id": 2,
@@ -52,7 +60,7 @@
 "lighting_and_atmosphere": "Dappled sunlight hitting the stone well, dramatic shadow inside the well."
 },
 "narration": "突然，一個不小心，金球從她的手中滑落。撲通一聲，金球掉進了深邃的水井裡，完全消失不見了。",
-"image_prompt": "公主 is leaning over the stone edge, reaching out desperately toward the bottom. Medium shot."
+"image_prompt": "(ONLY ONE CHARACTER: 1 princess) 公主 is leaning over the stone edge, reaching out desperately toward the bottom. Medium shot."
 },
 {
 "scene_id": 3,
@@ -63,7 +71,7 @@
 "lighting_and_atmosphere": "Soft lighting focusing on the face, slightly melancholic."
 },
 "narration": "失去最愛的玩具，公主坐在井邊難過地大哭起來。這時，耳邊突然響起一個溫和的聲音。",
-"image_prompt": "公主 is sitting on the ground, wiping tears from her eyes with a sad expression. Close-up shot."
+"image_prompt": "(ONLY ONE CHARACTER: 1 princess) 公主 is sitting on the ground, wiping tears from her eyes with a sad expression. Close-up shot."
 },
 {
 "scene_id": 4,
@@ -74,7 +82,7 @@
 "lighting_and_atmosphere": "Bright sunlight returning, conveying a feeling of unexpected hope."
 },
 "narration": "公主抬起頭，發現是一隻青蛙。青蛙歪著頭說：「我可以幫你撿回金球，但你要答應我一個條件。」",
-"image_prompt": "On the left, 青蛙 is sitting on a mossy stone. On the right, 公主 is looking down at him with surprise. Wide shot."
+"image_prompt": "(ONLY TWO CHARACTERS: 1 frog, 1 princess) On the left, 青蛙 is sitting on a mossy stone. On the right, 公主 is looking down at him with surprise. Wide shot."
 },
 {
 "scene_id": 5,
@@ -85,7 +93,7 @@
 "lighting_and_atmosphere": "Soft and warm sunlight, highlighting the interaction."
 },
 "narration": "只要能拿回金球，公主什麼都願意。她答應讓青蛙住進城堡，一起吃飯睡覺。",
-"image_prompt": "On the left, 青蛙 is tilting his head. On the right, 公主 is nodding eagerly while wiping tears. Medium shot."
+"image_prompt": "(ONLY TWO CHARACTERS: 1 frog, 1 princess) On the left, 青蛙 is tilting his head. On the right, 公主 is nodding eagerly while wiping tears. Medium shot."
 },
 {
 "scene_id": 6,
@@ -96,7 +104,7 @@
 "lighting_and_atmosphere": "Sparkling water drops catching the sunlight, joyful and vibrant."
 },
 "narration": "青蛙立刻跳進井裡，沒多久就把金球叼了上來，輕輕放在公主的面前。",
-"image_prompt": "On the left, 青蛙 is holding the shiny ball in his mouth. On the right, 公主 is reaching out joyfully. Close-up shot."
+"image_prompt": "(ONLY TWO CHARACTERS: 1 frog, 1 princess) On the left, 青蛙 is holding the shiny ball in his mouth. On the right, 公主 is reaching out joyfully. Close-up shot."
 },
 {
 "scene_id": 7,
@@ -107,7 +115,7 @@
 "lighting_and_atmosphere": "Bright and airy, conveying a sense of fast movement."
 },
 "narration": "公主拿回金球高興極了！她轉身就往城堡跑去，把可憐的青蛙和自己的承諾全都拋在腦後。",
-"image_prompt": "On the left, 青蛙 is looking sad. On the right, 公主 is running away quickly. Wide shot."
+"image_prompt": "(ONLY TWO CHARACTERS: 1 frog, 1 princess) On the left, 青蛙 is looking sad. On the right, 公主 is running away quickly. Wide shot."
 },
 {
 "scene_id": 8,
@@ -118,7 +126,7 @@
 "lighting_and_atmosphere": "Warm glow from massive crystal chandeliers, dramatic shadows."
 },
 "narration": "當晚公主和國王正在吃晚餐，青蛙突然來敲門。國王嚴肅地說：「答應過的事情，就必須履行。」",
-"image_prompt": "On the left, 國王 is standing and pointing a finger strictly. On the right, 公主 is looking down guiltily. Medium shot."
+"image_prompt": "(ONLY TWO CHARACTERS: 1 king, 1 princess) On the left, 國王 is standing and pointing a finger strictly. On the right, 公主 is looking down guiltily. Medium shot."
 },
 {
 "scene_id": 9,
@@ -129,7 +137,7 @@
 "lighting_and_atmosphere": "Cool silver moonlight streaming through the window, contrasting with warm bedside lamps."
 },
 "narration": "那天晚上，青蛙爬上了公主的枕頭。公主心裡極度不舒服，但也只能無奈地皺著眉頭忍耐。",
-"image_prompt": "On the left, 青蛙 is resting peacefully. On the right, 公主 is lying down with a highly uncomfortable expression. Close-up shot."
+"image_prompt": "(ONLY TWO CHARACTERS: 1 frog, 1 princess) On the left, 青蛙 is resting peacefully. On the right, 公主 is lying down with a highly uncomfortable expression. Close-up shot."
 },
 {
 "scene_id": 10,
@@ -140,7 +148,7 @@
 "lighting_and_atmosphere": "Warm, pleasant afternoon light, relaxing and harmonious vibe."
 },
 "narration": "日子一天天過去，青蛙每天溫柔體貼地陪伴著公主。漸漸地，公主發現自己不再討厭牠了。",
-"image_prompt": "On the left, 青蛙 is gesturing happily. On the right, 公主 is smiling warmly at him. Wide shot."
+"image_prompt": "(ONLY TWO CHARACTERS: 1 frog, 1 princess) On the left, 青蛙 is gesturing happily. On the right, 公主 is smiling warmly at him. Wide shot."
 },
 {
 "scene_id": 11,
@@ -151,7 +159,7 @@
 "lighting_and_atmosphere": "Sunset light coming through the window, creating a melancholic mood."
 },
 "narration": "有天公主因為好朋友要搬走而傷心大哭。青蛙輕聲安慰：「別怕，我會永遠陪著你。」",
-"image_prompt": "On the left, 公主 is covering her face and crying softly. On the right, 青蛙 is looking up at her with concern. Medium shot."
+"image_prompt": "(ONLY TWO CHARACTERS: 1 princess, 1 frog) On the left, 公主 is covering her face and crying softly. On the right, 青蛙 is looking up at her with concern. Medium shot."
 },
 {
 "scene_id": 12,
@@ -162,7 +170,7 @@
 "lighting_and_atmosphere": "Warm, romantic golden hour lighting focusing on the faces."
 },
 "narration": "公主聽了覺得非常幸福，笑著對青蛙說了聲謝謝。接著，她輕輕在青蛙的額頭上吻了一下。",
-"image_prompt": "On the left, 青蛙 is closing his eyes peacefully. On the right, 公主 is leaning in and gently kissing his forehead. Close-up shot."
+"image_prompt": "(ONLY TWO CHARACTERS: 1 frog, 1 princess) On the left, 青蛙 is closing his eyes peacefully. On the right, 公主 is leaning in and gently kissing his forehead. Close-up shot."
 },
 {
 "scene_id": 13,
@@ -173,7 +181,7 @@
 "lighting_and_atmosphere": "Intense magical glowing light overpowering the sunset, dramatic and miraculous."
 },
 "narration": "突然，青蛙的身體閃爍出耀眼的光芒！在不可思議的魔法中，青蛙漸漸變成了一位英俊的王子。",
-"image_prompt": "On the left, a bright magical glowing light is bursting. On the right, 公主 is stepping back with wide eyes. Wide shot."
+"image_prompt": "(ONLY TWO CHARACTERS: 1 glowing magical silhouette, 1 princess) On the left, a bright magical glowing light is bursting. On the right, 公主 is stepping back with wide eyes. Wide shot."
 },
 {
 "scene_id": 14,
@@ -184,7 +192,7 @@
 "lighting_and_atmosphere": "Warm and gentle lighting, magical dust slowly settling down."
 },
 "narration": "王子溫柔地微笑著，感謝公主的真心一吻解除了巫婆的詛咒。公主驚訝得愣住了，隨後羞澀地笑了。",
-"image_prompt": "On the left, 王子 is smiling gently. On the right, 公主 is blushing with a shy but happy smile. Medium shot."
+"image_prompt": "(ONLY TWO CHARACTERS: 1 prince, 1 princess) On the left, 王子 is smiling gently. On the right, 公主 is blushing with a shy but happy smile. Medium shot."
 },
 {
 "scene_id": 15,
@@ -195,7 +203,7 @@
 "lighting_and_atmosphere": "Extremely bright, festive, and triumphant lighting, pure joy."
 },
 "narration": "王子邀請公主回到他的王國一起生活。他們舉行了盛大的婚禮，從此過著幸福快樂的日子。",
-"image_prompt": "On the left, 王子 is waving joyfully. On the right, 公主 is holding a bouquet and cheering. Wide shot."
+"image_prompt": "(ONLY TWO CHARACTERS: 1 prince, 1 princess) On the left, 王子 is waving joyfully. On the right, 公主 is holding a bouquet and cheering. Wide shot."
 }
 ]
 }
