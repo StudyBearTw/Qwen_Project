@@ -1,9 +1,9 @@
-# 🎨 AI 繪本微場景劇本生成提示詞 (Micro-Storyboard Prompt Guide)
+# AI 繪本場景劇本生成提示詞 (Micro-Storyboard Prompt Guide)
 
 本文件提供專為大語言模型 (如 Gemini, GPT-4, Claude) 設計的**系統提示詞 (System Prompt)**。
 其核心用途是將一般的故事文本，透過嚴格的約束條件，轉化為我們的 AI 繪本流水線 (Pipeline) 能夠直接解析並完美渲染的 `story.json` 格式。
 
-## 💡 核心工程設計 (Prompt Engineering Highlights)
+## Prompt Engineering Highlights
 
 這份提示詞並非單純的故事擴寫，而是融入了軟體工程與教育心理學的約束條件：
 
@@ -14,7 +14,7 @@
 *   **底層屬性覆寫 (Base Attribute Override)**
     在 `character_registry` 結構中強制定義 `base_clothing`，從源頭阻絕 AI 繪圖模型對動物角色產生「過度擬人化 (穿上人類衣服)」的幻覺。
 
-## 🚀 使用方法 (How to Use)
+## 使用方法
 
 1. 複製下方【提示詞模板】中的所有內容。
 2. 開啟任何高階大語言模型 (推薦使用 **Gemini 1.5 Pro** 或 **GPT-4o**，以獲得最佳的 JSON 格式遵循能力)。
@@ -23,7 +23,7 @@
 
 ---
 
-## 📝 提示詞模板 (Prompt Template)
+## Prompt Template
 
 請完整複製以下內容並替換故事文本：
 
