@@ -34,7 +34,7 @@
 請確認已安裝 Python 3.10 以上版本，並執行以下指令安裝必備套件：
 ```bash
 pip install torch diffusers transformers soundfile moviepy accelerate
-
+```
 ### 2. 準備劇本
 
 請將符合本專案 Data Schema 格式的劇本儲存為 story.json，並放置於專案根目錄下。專案內已提供《青蛙王子與金球》作為預設測試範例。
@@ -42,10 +42,12 @@ pip install torch diffusers transformers soundfile moviepy accelerate
 ### 3. 執行生成pipelne
 
 在終端機中執行主程式：
-```python main.py```
+```bash
+python main.py
+```
 
-系統將自動執行以下流程：
-載入生圖與語音模型至 GPU/CPU。
-啟動執行緒池，平行生成各幕圖片 (.png) 與語音 (.wav)。
-呼叫 MoviePy 進行影音精準對位與剪輯。
-最終合成的 MP4 繪本將自動輸出於 test_gen 資料夾中。
+#### 系統將自動執行以下流程：
+* 載入生圖與語音模型至 GPU/CPU。
+* 啟動執行緒池，平行生成各幕圖片 (.png) 與語音 (.wav)。
+* 呼叫 MoviePy 進行影音精準對位與剪輯。
+* 最終合成的 MP4 繪本將自動輸出於 test_gen 資料夾中。
