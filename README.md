@@ -37,7 +37,8 @@ pip install torch diffusers transformers soundfile moviepy accelerate
 ```
 ### 2. 準備劇本
 
-請將符合本專案 Data Schema 格式的劇本儲存為 story.json，並放置於專案根目錄下。專案內已提供《青蛙王子與金球》作為預設測試範例。
+請將符合本專案 Data Schema 格式的劇本儲存為 story.json，並放置於專案根目錄下。專案內已提供《青蛙王子與公主》作為預設測試範例。
+詳細給Gemini或GPT產出符合story.json的每一幕分鏡的Prompt資料請看[劇本處理README](Prompt_Guide.md)
 
 ### 3. 執行生成pipelne
 
